@@ -32,10 +32,14 @@
     <!--
         div is block element
     -->
-    <div id='header'>
+    <header id='header'>
 
         <!--
             p is block element
+        -->
+
+        <!--
+            h1,h2,h3,h4,h5,h6 all semantic tags
         -->
         <h2>
             SU Pizza Shop
@@ -74,181 +78,183 @@
 
         </nav>
 
-    </div>
+    </header>
 
     <hr>
 
-    <div id='about'>
+    <main>
 
-        <!--
+        <section id='about'>
+
+            <!--
             h4 is block element
         -->
-        <h4>About</h4>
+            <h4>About</h4>
 
-        <!--
+            <!--
             p is block element
         -->
-        <p>
-            At Su Pizza Shop, we're dedicated to crafting exceptional pizzas using only the finest ingredients. Our
-            commitment starts with fresh, high-quality ingredients, from our house-made dough prepared daily to our
-            premium cheeses and toppings.
+            <p>
+                At Su Pizza Shop, we're dedicated to crafting exceptional pizzas using only the finest ingredients. Our
+                commitment starts with fresh, high-quality ingredients, from our house-made dough prepared daily to our
+                premium cheeses and toppings.
 
-            Our menu features a curated selection of classic pizzas alongside innovative gourmet creations, ensuring
-            there's a perfect slice to satisfy every craving. Whether you're nourishing a busy family or enjoying a
-            casual lunch, Su Pizza Shop provides a welcoming atmosphere and delicious, affordable pizza made with
-            passion.
+                Our menu features a curated selection of classic pizzas alongside innovative gourmet creations, ensuring
+                there's a perfect slice to satisfy every craving. Whether you're nourishing a busy family or enjoying a
+                casual lunch, Su Pizza Shop provides a welcoming atmosphere and delicious, affordable pizza made with
+                passion.
 
-            Experience the Su Pizza Shop difference. We look forward to serving you.
+                Experience the Su Pizza Shop difference. We look forward to serving you.
 
-        </p>
+            </p>
 
-    </div>
+        </section>
 
-    <hr>
+        <hr>
 
-    <div id='menu'>
+        <section id='menu'>
 
-        <h4>Menu</h4>
+            <h4>Menu</h4>
 
-        <div id='card-1' style='border: 1px solid black; padding: 4px; width: 400px;margin-top: 4px;'>
-            <!--
+            <div id='card-1' style='border: 1px solid black; padding: 4px; width: 400px;margin-top: 4px;'>
+                <!--
                 img is block element
             -->
-            <img src="new-york.avif" alt="new-york-pizza" width='200px'>
-            <div>
-                <!--
+                <img src="new-york.avif" alt="new-york-pizza" width='200px'>
+                <div>
+                    <!--
                     b is block element
                 -->
-                <b>New York Pizza</b>
-                <!--
+                    <b>New York Pizza</b>
+                    <!--
                     i is block element
                 -->
-                <i>9.90$</i>
+                    <i>9.90$</i>
+                </div>
+
             </div>
 
-        </div>
+            <div id='card-2' style='border: 1px solid black; padding: 4px; width: 400px; margin-top: 4px;'>
+                <img src="chicago.avif" alt="chicago-pizza" width='200px'>
+                <div>
+                    <b>Chicago Pizza</b>
+                    <i>12.90$</i>
+                </div>
 
-        <div id='card-2' style='border: 1px solid black; padding: 4px; width: 400px; margin-top: 4px;'>
-            <img src="chicago.avif" alt="chicago-pizza" width='200px'>
-            <div>
-                <b>Chicago Pizza</b>
-                <i>12.90$</i>
             </div>
 
-        </div>
+            <div id='card-3' style='border: 1px solid black; padding: 4px; width: 400px;margin-top: 4px;'>
+                <img src="detroit.avif" alt="detroit-style-pizza" width='200px'>
+                <div>
+                    <b>Detroit Style Pizza</b>
+                    <i>8.90$</i>
+                </div>
 
-        <div id='card-3' style='border: 1px solid black; padding: 4px; width: 400px;margin-top: 4px;'>
-            <img src="detroit.avif" alt="detroit-style-pizza" width='200px'>
-            <div>
-                <b>Detroit Style Pizza</b>
-                <i>8.90$</i>
             </div>
 
-        </div>
+            <div id='card-4' style='border: 1px solid black; padding: 4px; width: 400px;margin-top: 4px;'>
+                <img src="margarita.avif" alt="margarita-pizza" width='200px'>
+                <div>
+                    <b>Margarita Pizza</b>
+                    <i>7.90$</i>
+                </div>
 
-        <div id='card-4' style='border: 1px solid black; padding: 4px; width: 400px;margin-top: 4px;'>
-            <img src="margarita.avif" alt="margarita-pizza" width='200px'>
-            <div>
-                <b>Margarita Pizza</b>
-                <i>7.90$</i>
             </div>
 
-        </div>
+        </section>
 
-    </div>
+        <hr>
 
-    <hr>
+        <section id='working-hours'>
 
-    <div id='working-hours'>
+            <h4>Working Hours</h4>
 
-        <h4>Working Hours</h4>
+            <table>
 
-        <table>
+                <tr>
+                    <th>Days</th>
+                    <th colspan='2'>Hours</th>
+                </tr>
 
-            <tr>
-                <th>Days</th>
-                <th colspan='2'>Hours</th>
-            </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                </tr>
 
-            <tr>
-                <td>Monday</td>
-                <td>Closed</td>
-                <td>Closed</td>
-            </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td rowspan='5'>12.00</td>
+                    <td rowspan='5'>23.00</td>
 
-            <tr>
-                <td>Tuesday</td>
-                <td rowspan='5'>12.00</td>
-                <td rowspan='5'>23.00</td>
+                </tr>
 
-            </tr>
+                <tr>
+                    <td>Wednesday</td>
+                </tr>
 
-            <tr>
-                <td>Wednesday</td>
-            </tr>
+                <tr>
+                    <td>Thursday</td>
+                </tr>
 
-            <tr>
-                <td>Thursday</td>
-            </tr>
+                <tr>
+                    <td>Friday</td>
+                </tr>
 
-            <tr>
-                <td>Friday</td>
-            </tr>
+                <tr>
+                    <td>Saturday</td>
+                </tr>
 
-            <tr>
-                <td>Saturday</td>
-            </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>12.00</td>
+                    <td>02.00</td>
 
-            <tr>
-                <td>Sunday</td>
-                <td>12.00</td>
-                <td>02.00</td>
+                </tr>
 
-            </tr>
+            </table>
 
-        </table>
+        </section>
 
-    </div>
+        <hr>
 
-    <hr>
+        <section id='contact-us'>
 
-    <div id='contact-us'>
-
-        <h4>Contact us</h4>
+            <h4>Contact us</h4>
 
 
-        <form action="/menu.html">
+            <form action="/menu.html">
 
-            <label for="email">Email</label>
+                <label for="email">Email</label>
 
-            <!--
+                <!--
                 <input type="text" name='email' id='email' value='kaan@mail.com'>
             -->
 
-            <!--
+                <!--
                 type = number, password, email, text  etc.
 
                 <input type="number" name='email' id='email' required
                 readonly>
             -->
 
-            <input type="text" name='email' id='email' value='kaan@mail.com' placeholder='enter e-email' required
-                readonly>
-            <br>
+                <input type="text" name='email' id='email' value='kaan@mail.com' placeholder='enter e-email' required
+                    readonly>
+                <br>
 
-            <!--
+                <!--
                 <label for="password">Password</label>
 
                 <input type="password" name="password" id="password">
 
             -->
 
-            <label for="message">Message</label>
+                <label for="message">Message</label>
 
-            <textarea name="message" id="message" rows='10' cols='24' maxlength='4'></textarea>
+                <textarea name="message" id="message" rows='10' cols='24' maxlength='4'></textarea>
 
 
-            <!--
+                <!--
 
                 <div style='padding: 12px;'>
                     <input type="radio" name='cars' id='mercedes' value='Mercedes'>
@@ -264,7 +270,7 @@
 
             -->
 
-            <!--
+                <!--
 
                 <div style='padding: 12px;'>
                     <input type="checkbox" name='car-1' id='mercedes' value='Mercedes'>
@@ -280,7 +286,7 @@
 
             -->
 
-            <!--
+                <!--
 
             <label for="cars">Cars</label>
             <br>
@@ -294,12 +300,13 @@
 
             -->
 
-            <input type="submit" value='Submit'>
+                <input type="submit" value='Submit'>
 
-        </form>
+            </form>
 
 
-    </div>
+        </section>
+    </main>
 
 </body>
 
