@@ -5,13 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        /*
+        öncelik sırası::after
+        inline styling
+        id selector
+        class selector
+        tag selector
+        
+        */
+
+        /*
+
+        inline styling
+        head-> style tag'i
+        dış .css dosyası
+        
+        */
+
+        /* tag selector */
+        section {
+            background-color: green;
+        }
+
+        /* id selector */
+        #container-id {
+            background-color: red;
+        }
+
+        /* class selector */
+        .container {
+
+            background-color: blue;
+
+        }
+    </style>
 </head>
 
 <body>
 
-    Menu 1
-
-    <a href="/index.html">back</a>
+    <section style='background-color: aqua;' class='container' id='container-id'>
+        Welcome
+    </section>
 </body>
 
 </html>
