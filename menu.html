@@ -11,62 +11,133 @@
         rel="stylesheet">
 
     <style>
-        html {
-
-            font-size: 16px;
-            font-family: "Montserrat", sans-serif;
-
-
-        }
-
-        body {
-            font-size: 12px;
-
-
-        }
-
-        .div-1 {
-
-            font-size: 2rem;
+        .div-1,
+        .div-2,
+        .div-3 {
+            background-color: aquamarine;
+            width: 400px;
+            height: 400px;
+            border: 5px solid red;
             text-align: center;
-            text-decoration: underline;
+            font-size: 32px;
+            margin: 16px;
+        }
+
+        /*tag'in child class'ını etkiler*/
+        section.div-4.div-1 {
+
             background-color: red;
-            opacity: 0.1;
+            width: 400px;
+            height: 400px;
+            border: 5px solid black;
+            text-align: center;
+            font-size: 32px;
+            margin: 16px;
+        }
+
+        /*bir alt kardeşi hepsini etkiler*/
+        p+div {
+
+
+            margin: 4px;
+        }
+
+
+        /*Kardeşlerin hepsini etkiler*/
+        p~div {
+
+
+            margin: 4px;
+        }
+
+        /*Child olan tag'leri etkiler*/
+        div>p {
+
+            background-color: red;
+        }
+
+        input[type='number'] {
+
+            background-color: red;
+        }
+
+        .div-6 {
+
+            background-color: lightgreen;
+            width: 300px;
+            height: 300px;
+        }
+
+        .div-6:hover {
+
+            background-color: lightsalmon;
+            width: 300px;
+            height: 300px;
+        }
+
+        .table-container:nth-child(even) {
+            background-color: gray;
+        }
+
+        .table-container>div {
+
+            margin: 4px;
+            background-color: lightcoral;
 
         }
 
 
 
-        /*
-        öncelik sırası::after
-        inline styling
-        id selector
-        class selector
-        tag selector
-        
-        */
 
-        /*
-
-        inline styling
-        head-> style tag'i
-        dış .css dosyası
-        
-        */
-
-        /* tag selector */
+        /*advanced selectorlerde öncelik sırası */
     </style>
 </head>
 
 <body>
 
+    <input type="text" name="email" id="email">
 
+    <input type="number" name="email" id="email">
 
-    <div class='div-1'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dignissimos eaque ab aliquam totam voluptatem culpa
-        provident, ex fugiat ut, non, consequuntur similique cum. Praesentium reprehenderit sint laboriosam nam
-        necessitatibus.
+    <div>
+        <p>
+            Welcome
+        </p>
+
+        <div>
+
+            <p>
+
+                Welcome 2
+            </p>
+        </div>
+
     </div>
+
+    <p>
+        Out of div
+    </p>
+
+    <div class='div-6'>
+
+        6
+    </div>
+
+    <div class='table-container'>
+
+        <div>
+            1
+        </div>
+        <div>
+            2
+        </div>
+
+
+    </div>
+
+
+
+
 
 
 </body>
