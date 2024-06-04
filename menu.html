@@ -18,42 +18,41 @@
         }
 
         .container {
-            display: flex;
-            flex-direction: row;
-            background-color: green;
-            gap: 24px;
-            height: 300px;
-            justify-content: center;
-            align-items: baseline;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 2fr;
+
+
         }
 
         .container>div {
-            text-align: center;
-            align-content: center;
-            background-color: lightblue;
-            border: 5px solid red;
-            width: 300px;
+            background-color: lightcoral;
+            border: 5px solid green;
+            height: 200px;
+
+
 
         }
 
 
         .div-1 {
-            flex-shrink: 30px;
-            flex-grow: 20px;
+            grid-column: 1 / 2;
+            grid-row: 2 / 3
         }
 
         .div-2 {
-            flex-shrink: 1;
-
+            grid-column: 2/3;
+            grid-row: 2/3;
         }
 
         .div-3 {
-            flex-shrink: 1;
-
+            grid-column: 1 / 2;
         }
 
-        .div-4 {
-            flex-shrink: 4;
+        .div-4 {}
+
+        .div-5 {
+            grid-column: 3 /5;
 
         }
     </style>
@@ -85,6 +84,11 @@
 
         </div>
 
+        <div class='div-5'>
+
+            5
+
+        </div>
     </div>
 
 
