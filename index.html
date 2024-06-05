@@ -7,21 +7,11 @@
     <meta name='Author' content='Murat Kaan Ilhan'>
     <meta name='Description' content='This website enables people to buy or check pizzas'>
 
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 4px;
-        }
-    </style>
-
-    <script>
-
-        const name = 'kaan'
-
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
@@ -29,284 +19,211 @@
 
 <body>
 
-    <!--
-        div is block element
-    -->
-    <header id='header'>
+    <div id='body-container'>
 
-        <!--
-            p is block element
-        -->
+        <header id='header'>
 
-        <!--
-            h1,h2,h3,h4,h5,h6 all semantic tags
-        -->
-        <h2>
-            SU Pizza Shop
-        </h2>
+            <h2>
+                SU Pizza Shop
+            </h2>
 
-        <nav>
+            <nav>
 
-            <!--
-                <ol>
-                    <li>About Us</li>
-                    <li>Menu</li>
-                    <li>Working Hours</li>
-                    <li>Contact Us</li>
-                </ol>
-            -->
+                <ul>
+                    <li>
+                        <a href="/#about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/#menu">Menu</a>
+                    </li>
+                    <li>
+                        <a href="/#working-hours">Working Hours</a>
+                    </li>
+                    <li>
+                        <a href="/#contact-us">Contact Us</a>
+                    </li>
+                </ul>
 
-            <ul>
+            </nav>
 
-                <li>
-                    <!--
-                        a is block element
-                    -->
-                    <a href="/#about">About Us</a>
-                </li>
-                <li>
-                    <a href="/#menu">Menu</a>
-                </li>
-                <li>
-                    <a href="/#working-hours">Working Hours</a>
-                </li>
-                <li>
-                    <a href="/#contact-us">Contact U</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-    </header>
-
-    <hr>
-
-    <main>
-
-        <section id='about'>
-
-            <!--
-            h4 is block element
-        -->
-            <h4>About</h4>
-
-            <!--
-            p is block element
-        -->
-            <p>
-                At Su Pizza Shop, we're dedicated to crafting exceptional pizzas using only the finest ingredients. Our
-                commitment starts with fresh, high-quality ingredients, from our house-made dough prepared daily to our
-                premium cheeses and toppings.
-
-                Our menu features a curated selection of classic pizzas alongside innovative gourmet creations, ensuring
-                there's a perfect slice to satisfy every craving. Whether you're nourishing a busy family or enjoying a
-                casual lunch, Su Pizza Shop provides a welcoming atmosphere and delicious, affordable pizza made with
-                passion.
-
-                Experience the Su Pizza Shop difference. We look forward to serving you.
-
-            </p>
-
-        </section>
+        </header>
 
         <hr>
 
-        <section id='menu'>
+        <main>
 
-            <h4>Menu</h4>
+            <section id='about'>
 
-            <div id='card-1' style='border: 1px solid black; padding: 4px; width: 400px;margin-top: 4px;'>
-                <!--
-                img is block element
-            -->
-                <img src="new-york.avif" alt="new-york-pizza" width='200px'>
-                <div>
-                    <!--
-                    b is block element
-                -->
-                    <b>New York Pizza</b>
-                    <!--
-                    i is block element
-                -->
-                    <i>9.90$</i>
+                <h4>About</h4>
+
+                <p>
+                    At <b> Su Pizza Shop</b> , we're dedicated to crafting exceptional pizzas using only the finest
+                    ingredients.
+                    Our
+                    commitment starts with fresh, high-quality ingredients, from our house-made dough prepared daily to
+                    our
+                    premium cheeses and toppings.
+                    <br>
+                    <br>
+                    Our menu features a curated selection of classic pizzas alongside innovative gourmet creations,
+                    ensuring
+                    there's a perfect slice to satisfy every craving. Whether you're nourishing a busy family or
+                    enjoying a
+                    casual lunch, <b>Su Pizza Shop</b> provides a welcoming atmosphere and delicious, affordable pizza
+                    made
+                    with
+                    passion.
+                    <br>
+                    <br>
+                    Experience the <b>Su Pizza Shop</b> difference. We look forward to serving you.
+                </p>
+
+            </section>
+
+            <section id='menu'>
+
+                <h4>Menu</h4>
+
+                <div class='menu-container'>
+
+                    <div id='card-1' class='card-container'>
+                        <img src="new-york.avif" alt="new-york-pizza">
+                        <div>
+                            <b>New York Pizza</b>
+                            <i>9.90$</i>
+                        </div>
+                    </div>
+
+                    <div id='card-2' class='card-container'>
+                        <img src="chicago.avif" alt="chicago-pizza">
+                        <div>
+                            <b>Chicago Pizza</b>
+                            <i>12.90$</i>
+                        </div>
+                    </div>
+
+                    <div id='card-3' class='card-container'>
+                        <img src="detroit.avif" alt="detroit-style-pizza">
+                        <div>
+                            <b>Detroit Style Pizza</b>
+                            <i>8.90$</i>
+                        </div>
+                    </div>
+
+                    <div id='card-4' class='card-container'>
+                        <img src="margarita.avif" alt="margarita-pizza">
+                        <div>
+                            <b>Margarita Pizza</b>
+                            <i>7.90$</i>
+                        </div>
+                    </div>
+
                 </div>
 
+            </section>
+
+            <section id='working-hours'>
+
+                <h4>Working Hours</h4>
+
+                <div class='table-container'>
+                    <table>
+
+                        <tr>
+                            <th>Days</th>
+                            <th>Open</th>
+                            <th>Close</th>
+                        </tr>
+
+                        <tr>
+                            <td>Monday</td>
+                            <td colspan='2'>Closed</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tuesday</td>
+                            <td rowspan='5'>12.00</td>
+                            <td rowspan='5'>23.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Wednesday</td>
+                        </tr>
+
+                        <tr>
+                            <td>Thursday</td>
+                        </tr>
+
+                        <tr>
+                            <td>Friday</td>
+                        </tr>
+
+                        <tr>
+                            <td>Saturday</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sunday</td>
+                            <td>12.00</td>
+                            <td>02.00</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </section>
+
+            <section id='contact-us'>
+
+                <h4>Contact us</h4>
+
+                <div class='form-container'>
+
+
+                    <form action="/menu.html">
+
+                        <div class='input-container'>
+                            <label for="email">Email</label>
+                            <input type="text" name='email' id='email' v placeholder='Enter e-email' required>
+                        </div>
+
+                        <div class='input-container'>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows='10' cols='24' maxlength='4'></textarea>
+                        </div>
+
+                        <input type="submit" value='Submit'>
+
+                    </form>
+
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+
+            <div id='address'>
+                <h2>
+                    SU Pizza Shop
+                </h2>
+
+                <address>
+                    Altunizade, Küçük Çamlıca Mahallesi
+                    <br>
+                    Şehit İsmail Moray Sokak No:3
+                    <br>
+                    Kısıklı, 34696 Üsküdar/İstanbul
+                </address>
             </div>
 
-            <div id='card-2' style='border: 1px solid black; padding: 4px; width: 400px; margin-top: 4px;'>
-                <img src="chicago.avif" alt="chicago-pizza" width='200px'>
-                <div>
-                    <b>Chicago Pizza</b>
-                    <i>12.90$</i>
-                </div>
-
+            <div id='copyright'>
+                &#169; SU Pizza Shop, 2024
             </div>
 
-            <div id='card-3' style='border: 1px solid black; padding: 4px; width: 400px;margin-top: 4px;'>
-                <img src="detroit.avif" alt="detroit-style-pizza" width='200px'>
-                <div>
-                    <b>Detroit Style Pizza</b>
-                    <i>8.90$</i>
-                </div>
+        </footer>
 
-            </div>
-
-            <div id='card-4' style='border: 1px solid black; padding: 4px; width: 400px;margin-top: 4px;'>
-                <img src="margarita.avif" alt="margarita-pizza" width='200px'>
-                <div>
-                    <b>Margarita Pizza</b>
-                    <i>7.90$</i>
-                </div>
-
-            </div>
-
-        </section>
-
-        <hr>
-
-        <section id='working-hours'>
-
-            <h4>Working Hours</h4>
-
-            <table>
-
-                <tr>
-                    <th>Days</th>
-                    <th colspan='2'>Hours</th>
-                </tr>
-
-                <tr>
-                    <td>Monday</td>
-                    <td>Closed</td>
-                    <td>Closed</td>
-                </tr>
-
-                <tr>
-                    <td>Tuesday</td>
-                    <td rowspan='5'>12.00</td>
-                    <td rowspan='5'>23.00</td>
-
-                </tr>
-
-                <tr>
-                    <td>Wednesday</td>
-                </tr>
-
-                <tr>
-                    <td>Thursday</td>
-                </tr>
-
-                <tr>
-                    <td>Friday</td>
-                </tr>
-
-                <tr>
-                    <td>Saturday</td>
-                </tr>
-
-                <tr>
-                    <td>Sunday</td>
-                    <td>12.00</td>
-                    <td>02.00</td>
-
-                </tr>
-
-            </table>
-
-        </section>
-
-        <hr>
-
-        <section id='contact-us'>
-
-            <h4>Contact us</h4>
-
-
-            <form action="/menu.html">
-
-                <label for="email">Email</label>
-
-                <!--
-                <input type="text" name='email' id='email' value='kaan@mail.com'>
-            -->
-
-                <!--
-                type = number, password, email, text  etc.
-
-                <input type="number" name='email' id='email' required
-                readonly>
-            -->
-
-                <input type="text" name='email' id='email' value='kaan@mail.com' placeholder='enter e-email' required
-                    readonly>
-                <br>
-
-                <!--
-                <label for="password">Password</label>
-
-                <input type="password" name="password" id="password">
-
-            -->
-
-                <label for="message">Message</label>
-
-                <textarea name="message" id="message" rows='10' cols='24' maxlength='4'></textarea>
-
-
-                <!--
-
-                <div style='padding: 12px;'>
-                    <input type="radio" name='cars' id='mercedes' value='Mercedes'>
-                    <label for="mercedes">Mercedes</label>
-
-                    <input type="radio" name='cars' id='audi' value='Audi'>
-                    <label for="audi">Audi</label>
-
-                    <input type="radio" name='cars' id='volvo' value='Volvo'>
-                    <label for="volvo">Volvo</label>
-
-                </div>
-
-            -->
-
-                <!--
-
-                <div style='padding: 12px;'>
-                    <input type="checkbox" name='car-1' id='mercedes' value='Mercedes'>
-                    <label for="mercedes">Mercedes</label>
-
-                    <input type="checkbox" name='car-2' id='audi' value='Audi'>
-                    <label for="audi">Audi</label>
-
-                    <input type="checkbox" name='car-3' id='volvo' value='Volvo'>
-                    <label for="volvo">Volvo</label>
-
-                </div>
-
-            -->
-
-                <!--
-
-            <label for="cars">Cars</label>
-            <br>
-            <select name="cars" id="cars" multiple>
-
-                <option value="mercedes">Mercedes</option>
-                <option value="volvo">Volvo</option>
-                <option value="audi">Audi</option>
-
-            </select>
-
-            -->
-
-                <input type="submit" value='Submit'>
-
-            </form>
-
-
-        </section>
-    </main>
+    </div>
 
 </body>
 
