@@ -5,96 +5,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+
 
     <style>
-        /*Flexbox */
-
-        body {
-            font-size: 16px;
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-auto-rows: 2fr;
-
-
-        }
-
-        .container>div {
-            background-color: lightcoral;
-            border: 5px solid green;
-            height: 200px;
-
-
-
-        }
-
-
+        /* 
         .div-1 {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3
+            background-color: mediumorchid;
+            border: 3px solid red;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            align-content: center;
+            font-size: 40px;
+
+
         }
 
         .div-2 {
-            grid-column: 2/3;
-            grid-row: 2/3;
+            background-color: forestgreen;
+            border: 3px solid red;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            align-content: center;
+            font-size: 40px;
+            position: relative;
+
         }
 
         .div-3 {
-            grid-column: 1 / 2;
+            background-color: cadetblue;
+            border: 3px solid red;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            align-content: center;
+            font-size: 40px;
+
+
+
         }
 
-        .div-4 {}
+        .div-4 {
+            background-color: palegoldenrod;
+            border: 3px solid red;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            align-content: center;
+            font-size: 40px;
 
-        .div-5 {
-            grid-column: 3 /5;
 
+
+        }
+
+        .div-2>div {
+
+            background-color: yellow;
+            border: 3px solid red;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            position: absolute;
+            top: 0;
+            left: 200px;
+            font-size: 12px;
+        }
+
+        */
+
+
+        h2 {
+            background-color: mediumpurple;
+            position: sticky;
+            top: 0;
+            z-index: 0;
+        }
+
+        p {
+
+            height: 400px;
+        }
+
+        .container>div {
+
+
+            background-color: darkolivegreen;
+            font-size: 40px;
+            padding: 16px;
+            text-align: center;
+            position: static;
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: 1;
         }
     </style>
 </head>
 
 <body>
 
+
     <div class='container'>
-        <div class='div-1'>
 
-            1
+        <div>
 
-        </div>
-
-        <div class='div-2'>
-
-            2
-
-        </div>
-        <div class='div-3'>
-
-            3
+            I AM HEADER
 
         </div>
 
-        <div class='div-4'>
+        <h2>Header 1</h2>
 
-            4
 
-        </div>
 
-        <div class='div-5'>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tempore ea nemo reiciendis aliquid minima,
+            quod aut explicabo, tenetur iusto asperiores nisi id quos laborum ab, rem assumenda? Provident, porro?</p>
 
-            5
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tempore ea nemo reiciendis aliquid minima,
+            quod aut explicabo, tenetur iusto asperiores nisi id quos laborum ab, rem assumenda? Provident, porro?</p>
 
-        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tempore ea nemo reiciendis aliquid minima,
+            quod aut explicabo, tenetur iusto asperiores nisi id quos laborum ab, rem assumenda? Provident, porro?</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tempore ea nemo reiciendis aliquid minima,
+            quod aut explicabo, tenetur iusto asperiores nisi id quos laborum ab, rem assumenda? Provident, porro?</p>
+
+        <h2>Header 2</h2>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tempore ea nemo reiciendis aliquid minima,
+            quod aut explicabo, tenetur iusto asperiores nisi id quos laborum ab, rem assumenda? Provident, porro?</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tempore ea nemo reiciendis aliquid minima,
+            quod aut explicabo, tenetur iusto asperiores nisi id quos laborum ab, rem assumenda? Provident, porro?</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tempore ea nemo reiciendis aliquid minima,
+            quod aut explicabo, tenetur iusto asperiores nisi id quos laborum ab, rem assumenda? Provident, porro?</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tempore ea nemo reiciendis aliquid minima,
+            quod aut explicabo, tenetur iusto asperiores nisi id quos laborum ab, rem assumenda? Provident, porro?</p>
+
+        <h2>Header 3</h2>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tempore ea nemo reiciendis aliquid minima,
+            quod aut explicabo, tenetur iusto asperiores nisi id quos laborum ab, rem assumenda? Provident, porro?</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tempore ea nemo reiciendis aliquid minima,
+            quod aut explicabo, tenetur iusto asperiores nisi id quos laborum ab, rem assumenda? Provident, porro?</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tempore ea nemo reiciendis aliquid minima,
+            quod aut explicabo, tenetur iusto asperiores nisi id quos laborum ab, rem assumenda? Provident, porro?</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tempore ea nemo reiciendis aliquid minima,
+            quod aut explicabo, tenetur iusto asperiores nisi id quos laborum ab, rem assumenda? Provident, porro?</p>
+
+
+
     </div>
 
 
+    <!--
+     <div class='div-1'>
+        1
 
 
 
+    </div>
+
+    <div class='div-2'>
+        <div>
+
+            i
+
+        </div>
+        2
+
+
+
+    </div>
+
+    <div class='div-3'>
+        3
+
+
+
+    </div>
+
+    <div class='div-4'>
+        4
+
+
+
+    </div>
+    -->
 
 
 
