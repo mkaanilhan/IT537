@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 1px;
+            padding: 0;
+
+        }
+
+        header {
+            background-color: thistle;
+            text-align: center;
+            position: sticky;
+            top: 0;
+
+        }
+
+        main {
+            background-color: fuchsia;
+            text-align: center;
+            height: 100vh;
+        }
+
+        footer {
+            background-color: mediumaquamarine;
+            text-align: center;
+            position: sticky;
+            bottom: 0;
+        }
+
+
+        .container {
+            display: block;
+            justify-content: center;
+
+        }
+
+        .container>div {
+            background-color: red;
+            border: 5px solid black;
+
+        }
+
+        @media screen and (min-width: 600px) {
+
+            main {
+                background-color: cornflowerblue;
+                text-align: left;
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+
+            }
+
+            .container>div {
+                background-color: red;
+                border: 5px solid black;
+                min-width: 300px;
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+
+            main {
+                background-color: burlywood;
+                text-align: right;
+            }
+
+
+            .container {
+                display: flex;
+                justify-content: center;
+
+            }
+
+            .container>div {
+                background-color: red;
+                border: 5px solid black;
+                min-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>HEADER</header>
+    <div class='container'>
+        <div>1</div>
+        <div>2</div>
+
+
+
+    </div>
+    <main>MAIN</main>
+    <footer>FOOTER</footer>
+
+</body>
+
+</html>
