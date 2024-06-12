@@ -1,0 +1,17 @@
+{
+  "name": "it537",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "example.js",
+  "scripts": {
+    "dev": "nodemon test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
+
+
