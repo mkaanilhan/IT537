@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <button onclick='clickBtn()'>Click</button>
+
+    <script>
+
+        const clickBtn = async () => {
+
+            const responseMain = await fetch('https://jsonplaceholder.typicode.com/posts', {
+                method: 'POST',
+                data: JSON.stringify({
+                    email: 'kaan@mail.com',
+                    password: '1234'
+
+                })
+
+            })
+
+            /*
+    
+                const responseMain = await fetch('https://jsonplaceholder.typicode.com/posts', {
+                    method: 'GET'
+    
+                })
+    
+                const responseData = await responseMain.json()
+    
+                console.log(responseData)
+    
+                */
+
+        }
+
+    </script>
+
+</body>
+
+</html>
